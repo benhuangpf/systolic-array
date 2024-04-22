@@ -1,0 +1,1 @@
+iverilog -o mid test_tpu.v tpu_top.v write_out.v systolic.v systolic_controll.v quantize.v addr_sel.v sram_256x32b.v sram_16x128b.v

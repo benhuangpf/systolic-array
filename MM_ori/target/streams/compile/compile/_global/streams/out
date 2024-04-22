@@ -1,0 +1,7 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/ben/chipyard/generators/MM/src/main/scala/MM.scala:150:11: class TLRegBundle in package tilelink is deprecated (since rocket-chip 1.3): Use HasTLControlRegMap+HasInterruptSources traits in place of TLRegisterRouter+TLRegBundle+TLRegModule[0m
+[0m[[0m[33mwarn[0m] [0m[0m      new TLRegBundle(params, _))([0m
+[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ben/chipyard/generators/MM/src/main/scala/MM.scala:158:11: class AXI4RegBundle in package axi4 is deprecated (since rocket-chip 1.3): Use HasAXI4ControlRegMap+HasInterruptSources traits in place of AXI4RegisterRouter+AXI4RegBundle+AXI4RegModule[0m
+[0m[[0m[33mwarn[0m] [0m[0m      new AXI4RegBundle(params, _))([0m
+[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

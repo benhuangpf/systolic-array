@@ -1,0 +1,66 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Mar 28 19:57:28 2024
+[*]
+[dumpfile] "/home/ben/Systolic-array-implementation-in-RTL-for-TPU/Pre-Synthesis_Simulation/tpu.vcd"
+[dumpfile_mtime] "Thu Mar 28 19:37:29 2024"
+[dumpfile_size] 5268
+[savefile] "/home/ben/Systolic-array-implementation-in-RTL-for-TPU/Pre-Synthesis_Simulation/wave.gtkw"
+[timestart] 0
+[size] 1908 975
+[pos] -802 -273
+*-15.000000 135000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_tpu.
+[treeopen] test_tpu.my_tpu_top.
+[sst_width] 214
+[signals_width] 260
+[sst_expanded] 1
+[sst_vpaned_height] 283
+@28
+test_tpu.my_tpu_top.systolic_controll.clk[0]
+test_tpu.my_tpu_top.systolic_controll.srstn[0]
+test_tpu.my_tpu_top.systolic_controll.alu_start[0]
+@22
+test_tpu.my_tpu_top.systolic_controll.addr_serial_num[6:0]
+test_tpu.my_tpu_top.systolic_controll.addr_serial_num_nx[6:0]
+test_tpu.my_tpu_top.systolic_controll.cycle_num[8:0]
+test_tpu.my_tpu_top.systolic_controll.cycle_num_nx[8:0]
+test_tpu.my_tpu_top.systolic_controll.matrix_index[5:0]
+test_tpu.my_tpu_top.systolic_controll.matrix_index_nx[5:0]
+@28
+test_tpu.my_tpu_top.systolic_controll.data_set[1:0]
+test_tpu.my_tpu_top.systolic_controll.data_set_nx[1:0]
+test_tpu.my_tpu_top.systolic_controll.sram_write_enable[0]
+test_tpu.my_tpu_top.systolic_controll.state[2:0]
+test_tpu.my_tpu_top.systolic_controll.state_nx[2:0]
+test_tpu.my_tpu_top.systolic_controll.tpu_done[0]
+test_tpu.my_tpu_top.systolic_controll.tpu_done_nx[0]
+test_tpu.my_tpu_top.systolic_controll.tpu_start[0]
+@22
+test_tpu.my_tpu_top.addr_sel.addr_serial_num[6:0]
+test_tpu.my_tpu_top.addr_sel.sram_raddr_d0[9:0]
+test_tpu.my_tpu_top.addr_sel.sram_raddr_d0_nx[9:0]
+test_tpu.my_tpu_top.addr_sel.sram_raddr_d1[9:0]
+test_tpu.my_tpu_top.addr_sel.sram_raddr_d1_nx[9:0]
+test_tpu.my_tpu_top.addr_sel.sram_raddr_w0[9:0]
+test_tpu.my_tpu_top.addr_sel.sram_raddr_w0_nx[9:0]
+test_tpu.my_tpu_top.addr_sel.sram_raddr_w1[9:0]
+test_tpu.my_tpu_top.addr_sel.sram_raddr_w1_nx[9:0]
+@28
+test_tpu.my_tpu_top.addr_sel.clk[0]
+@23
+test_tpu.sram_128x32b_a0._rdata[31:0]
+@22
+test_tpu.sram_128x32b_a0.bytemask[3:0]
+@28
+test_tpu.sram_128x32b_a0.clk[0]
+test_tpu.sram_128x32b_a0.csb[0]
+@22
+test_tpu.sram_128x32b_a0.raddr[9:0]
+test_tpu.sram_128x32b_a0.rdata[31:0]
+test_tpu.sram_128x32b_a0.waddr[9:0]
+test_tpu.sram_128x32b_a0.wdata[7:0]
+@28
+test_tpu.sram_128x32b_a0.wsb[0]
+[pattern_trace] 1
+[pattern_trace] 0

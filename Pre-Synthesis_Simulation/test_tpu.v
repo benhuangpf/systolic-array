@@ -123,8 +123,8 @@ sram_128x32b sram_128x32b_a0(
 .bytemask(sram_bytemask_a),
 .csb(1'b0),
 .wsb(sram_write_enable_a0),
-.wdata(sram_wdata_a), 
-.waddr(sram_waddr_a), 
+// .wdata(sram_wdata_a), 
+// .waddr(sram_waddr_a), 
 .raddr(sram_raddr_a0), 
 .rdata(sram_rdata_a0)
 );
@@ -134,8 +134,8 @@ sram_128x32b sram_128x32b_a1(
 .bytemask(sram_bytemask_a),
 .csb(1'b0),
 .wsb(sram_write_enable_a1),
-.wdata(sram_wdata_a), 
-.waddr(sram_waddr_a), 
+// .wdata(sram_wdata_a), 
+// .waddr(sram_waddr_a), 
 .raddr(sram_raddr_a1), 
 .rdata(sram_rdata_a1)
 );
@@ -147,8 +147,8 @@ sram_128x32b sram_128x32b_b0(
 .bytemask(sram_bytemask_b),
 .csb(1'b0),
 .wsb(sram_write_enable_b0),
-.wdata(sram_wdata_b), 
-.waddr(sram_waddr_b), 
+// .wdata(sram_wdata_b), 
+// .waddr(sram_waddr_b), 
 .raddr(sram_raddr_b0), 
 .rdata(sram_rdata_b0)
 );
@@ -158,8 +158,8 @@ sram_128x32b sram_128x32b_b1(
 .bytemask(sram_bytemask_b),
 .csb(1'b0),
 .wsb(sram_write_enable_b1),
-.wdata(sram_wdata_b), 
-.waddr(sram_waddr_b), 
+// .wdata(sram_wdata_b), 
+// .waddr(sram_waddr_b), 
 .raddr(sram_raddr_b1), 
 .rdata(sram_rdata_b1)
 );
@@ -198,8 +198,8 @@ sram_16x128b sram_16x128b_c2(
 
 //dump wave file
 initial begin
-  $fsdbDumpfile("tpu.fsdb"); // "gray.fsdb" can be replaced into any name you want
-  $fsdbDumpvars("+mda");              // but make sure in .fsdb format
+  $dumpfile("tpu.vcd"); // "gray.fsdb" can be replaced into any name you want
+  $dumpvars(0,test_tpu);              // but make sure in .fsdb format
 end
 
 //====== clock generation =====
@@ -242,11 +242,11 @@ initial begin
 end
 */
 initial begin
-    $readmemb("data/mat1.txt", mat1);
-    $readmemb("data/mat2.txt", mat2);
-    $readmemb("golden/golden1.txt",golden1);
-    $readmemb("golden/golden2.txt",golden2);
-    $readmemb("golden/golden3.txt",golden3);
+    $readmemb("mat1.txt", mat1);
+    $readmemb("mat2.txt", mat2);
+    $readmemb("golden1.txt",golden1);
+    $readmemb("golden2.txt",golden2);
+    $readmemb("golden3.txt",golden3);
 
     #(`cycle_period);
     
@@ -333,7 +333,9 @@ task data2sram;
 			tmp_c_mat1[j] = {mat1[ARRAY_SIZE*i+j], tmp_c_mat1[j][(ARRAY_SIZE*3*DATA_WIDTH-1) -: 2*DATA_WIDTH*ARRAY_SIZE]};
 			tmp_c_mat2[j] = {mat2[ARRAY_SIZE*i+j], tmp_c_mat2[j][(ARRAY_SIZE*3*DATA_WIDTH-1) -: 2*DATA_WIDTH*ARRAY_SIZE]};
 		end
+		$write("%b\n%b\n", tmp_c_mat1[0], mat1[ARRAY_SIZE*i]);
 	end
+	$write("\n\n");
 	for(i = 0; i< ARRAY_SIZE ; i = i + 1) begin
 		case (i % 4)
 			0 : begin
@@ -358,6 +360,7 @@ task data2sram;
 				  end
 		endcase
 	end
+	$write("%b\n", tmp_mat1[0]);
 	
 	for(i = 0; i < 128; i=i+1)begin
 		if(i < (ARRAY_SIZE*3+3))begin
@@ -377,12 +380,14 @@ task data2sram;
 
 	end
 	$write("SRAM a0!!!!\n");
-	for(i = 0; i< 128 ; i = i + 1) begin
-                    $write("SRAM at address %d is \n%d %d %d %d  \n",i[7:0],$signed(sram_128x32b_a0.mem[i][31:24]),$signed(sram_128x32b_a0.mem[i][23:16]),$signed(sram_128x32b_a0.mem[i][15:8]),$signed(sram_128x32b_a0.mem[i][7:0]));
+	for(i = 0; i< 30 ; i = i + 1) begin
+                    $write("SRAM at address %d is \n%d %d %d %d",i[7:0],$signed(sram_128x32b_a0.mem[i][31:24]),$signed(sram_128x32b_a0.mem[i][23:16]),$signed(sram_128x32b_a0.mem[i][15:8]),$signed(sram_128x32b_a0.mem[i][7:0]));
+					$write(" %d %d %d %d  \n",$signed(sram_128x32b_a1.mem[i][31:24]),$signed(sram_128x32b_a1.mem[i][23:16]),$signed(sram_128x32b_a1.mem[i][15:8]),$signed(sram_128x32b_a1.mem[i][7:0]));
 	end
 	$write("SRAM b0!!!!\n");
-	for(i = 0; i< 128 ; i = i + 1) begin
-                    $write("SRAM at address %d is \n%d %d %d %d  \n",i[7:0],$signed(sram_128x32b_b0.mem[i][31:24]),$signed(sram_128x32b_b0.mem[i][23:16]),$signed(sram_128x32b_b0.mem[i][15:8]),$signed(sram_128x32b_b0.mem[i][7:0]));
+	for(i = 0; i< 30 ; i = i + 1) begin
+                    $write("SRAM at address %d is \n%d %d %d %d",i[7:0],$signed(sram_128x32b_b0.mem[i][31:24]),$signed(sram_128x32b_b0.mem[i][23:16]),$signed(sram_128x32b_b0.mem[i][15:8]),$signed(sram_128x32b_b0.mem[i][7:0]));
+					$write(" %d %d %d %d  \n",$signed(sram_128x32b_b1.mem[i][31:24]),$signed(sram_128x32b_b1.mem[i][23:16]),$signed(sram_128x32b_b1.mem[i][15:8]),$signed(sram_128x32b_b1.mem[i][7:0]));
 	end
   end
 endtask	

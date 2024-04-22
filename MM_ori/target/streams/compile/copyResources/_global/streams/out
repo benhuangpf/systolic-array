@@ -1,0 +1,20 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/golden1.txt,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/golden1.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/systolic.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/systolic.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/write_out.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/write_out.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/golden2.txt,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/golden2.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/addr_sel.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/addr_sel.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/test_tpu.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/test_tpu.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/sram_20000x100b.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/sram_20000x100b.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/tpu_top.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/tpu_top.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/sram_256x32b.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/sram_256x32b.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/copy.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/copy.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/mat1.txt,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/mat1.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/systolic_controll.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/systolic_controll.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/quantize.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/quantize.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/sram_64x512b.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/sram_64x512b.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/golden3.txt,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/golden3.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/MMMMIOBlackBox.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/MMMMIOBlackBox.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/blackbox.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/blackbox.v)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/mat2.txt,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/mat2.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ben/chipyard/generators/MM/src/main/resources/vsrc/sram_16x128b.v,/home/ben/chipyard/generators/MM/target/scala-2.13/classes/vsrc/sram_16x128b.v)[0m
