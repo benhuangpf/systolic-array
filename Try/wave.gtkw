@@ -1,14 +1,14 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Thu Apr 18 18:01:49 2024
+[*] Mon Apr 29 07:16:57 2024
 [*]
-[dumpfile] "/home/ben/Systolic-array-implementation-in-RTL-for-TPU/Try/tpu.vcd"
-[dumpfile_mtime] "Thu Apr 18 17:36:08 2024"
-[dumpfile_size] 6307
-[savefile] "/home/ben/Systolic-array-implementation-in-RTL-for-TPU/Try/wave.gtkw"
+[dumpfile] "/home/ben/systolic-array/Try/tpu.vcd"
+[dumpfile_mtime] "Mon Apr 22 20:44:55 2024"
+[dumpfile_size] 6301
+[savefile] "/home/ben/systolic-array/Try/wave.gtkw"
 [timestart] 522900
 [size] 1908 975
-[pos] 1919 -1
+[pos] 1919 0
 *-15.000000 468500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] test_tpu.
 [treeopen] test_tpu.my.
@@ -16,6 +16,6 @@
 [sst_width] 214
 [signals_width] 260
 [sst_expanded] 1
-[sst_vpaned_height] 283
+[sst_vpaned_height] 530
 [pattern_trace] 1
 [pattern_trace] 0

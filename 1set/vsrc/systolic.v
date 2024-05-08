@@ -115,8 +115,7 @@ always@(*) begin
 		mul_result = 0;
 		for(i=0; i<ARRAY_SIZE; i=i+1) 
 			for(j=0; j<ARRAY_SIZE; j=j+1) 
-				// matrix_mul_2D_nx[i][j] = matrix_mul_2D[i][j];
-				matrix_mul_2D_nx[i][j] = 0;
+				matrix_mul_2D_nx[i][j] = matrix_mul_2D[i][j];
 	end					
 end
 
